@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/addBook.css">
+    <title>Boek toevoegen</title>
+</head>
+<body>
+<div class="main-nav-container">
+    <nav class="main-nav">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="allBooks.html" class="nav-item">Alle boeken</a>
+        <a href="booksPerCategory.html" class="nav-item">Categorieën</a>
+        <a href="addBook.html" class="nav-item active">Boek toevoegen</a>
+    </nav>
+</div>
+<h4 id="page-title">Boek toevoegen</h4>
+    <div class="main-container">
+        <div class="form-container">
+            <form name="addBook" id="addBookForm" onsubmit="return validateForm()">
+                <div class="form-content">
+                    <h4 class="form-title">Nieuw Boek</h4>
+                    <div class="form-group">
+                        <label class="form-label">Titel:</label> <br>
+                        <input type="text" placeholder="Titel van jouw boek" class="form-input" name="title" >
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Auteur:</label> <br>
+                        <input type="text" placeholder="Auteur van jouw boek" class="form-input" name="author">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Categorie:</label> <br>
+                        <select class="form-category-select" name="category">
+                            <option value="Fantasy" selected>Fantasy</option>
+                            <option value="Classical">Horror</option>
+                            <option value="Fiction">Fictie</option>
+                            <option value="Non-fiction">Roman</option>
+                            <option value="Spiritual">Kinderboek</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Foto:</label>
+                        <input type="file" name="fotoInput">
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button id="button-accept" type="submit">Toevoegen</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script type="module" src="assets/scripts/addBook.js"></script>
+</body>
+</html>

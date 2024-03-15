@@ -1,0 +1,50 @@
+.form-container {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("../images/quote.jpg ");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: right;
+}
+
+@media only screen and (max-width: 600px){
+    .form-container{
+        background-size: 0;
+    }
+}
+.form-content{
+    flex: 1;
+}
+.form-title{
+    padding-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+.form-group{
+    margin-left: 5%;
+}
+.button-group{
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+#button-accept{
+    border-radius: 30px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    margin-left: 5%;
+}
+#button-accept:hover {
+    background-color: #45a049;
+    color: #000000;
+}
+
+
+
+
+

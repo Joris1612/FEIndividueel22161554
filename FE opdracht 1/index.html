@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  rel="stylesheet" href="assets/styles/main.css">
+    <title>Boek</title>
+</head>
+<body>
+    <div class="main-nav-container">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item active">Home</a>
+            <a href="allBooks.html" class="nav-item">Alle boeken</a>
+            <a href="booksPerCategory.html" class="nav-item">Categorieën</a>
+            <a href="addBook.html" class="nav-item">Boek toevoegen</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h4 id="page-title">Welkom bij mijn collectie van boeken</h4>
+        <div class="card-container">
+            <div class="card">
+                <h4 id="card-title">Alice in wonderland</h4>
+                <img src="assets/images/Alice.jpg" alt="Alice in Wonderland cover" class="card-image">
+                <div class="card-info-group">
+                    <p class="card-info">Auteur:</p>
+                    <p id="book-author">Lewis Caroll</p>
+                </div>
+                <div class="card-info-group">
+                    <p class="card-info">Categorie:</p>
+                    <p class="book-category">Fantasy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="assets/scripts/books.js" ></script>
+<script type="module" src="assets/scripts/main.js"></script>
+</html>
